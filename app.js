@@ -1,9 +1,13 @@
 const logger = require('./logger')
 
+const fileName = logger.loggerInfo.fileName
 
+const sayHello = () => {
 
-const sayHello = (name) => {
-    console.log(`Hello ${name}`)
+    console.log(fileName)
+
+    logger.loggerInfo()
 }
 
-logger.loggerInfo('hello world')
+
+sayHello()
